@@ -68,6 +68,14 @@ def validate_directory(errors: list[str]) -> None:
 
         if manifest.get("marketingOnly") is not True:
             fail(errors, 'manifest.json must include "marketingOnly": true')
+        default_locale = manifest.get("defaultLocale")
+        if not default_locale:
+            fail(errors, 'manifest.json must include "defaultLocale" (e.g. "en")')
+        elif not (PKG_DIR / "translations" / f"{default_locale}.json").is_file():
+            fail(
+                errors,
+                f"manifest.json defaultLocale '{default_locale}' has no matching translations/{default_locale}.json",
+            )
         for key in FORBIDDEN_MANIFEST_KEYS:
             if key in manifest:
                 fail(errors, f"manifest.json must not include forbidden key: {key}")
