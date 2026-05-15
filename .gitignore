@@ -10,3 +10,7 @@ kodif-zendesk-integration-app.zip
 # Python
 __pycache__/
 *.pyc
+
+# Claude Code tooling
+.claude-flow/
+.claude/
