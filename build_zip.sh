@@ -11,11 +11,12 @@ ZIP_NAME="kodif-zendesk-integration-app.zip"
 
 rm -f "$ZIP_NAME"
 
+# Include manifest, translations, README, and every asset under assets/.
+# Globbing assets/ means new logos/screenshots are picked up automatically.
 zip -r "$ZIP_NAME" \
     manifest.json \
-    translations/en.json \
-    assets/logo.png \
-    assets/logo-small.png \
+    translations \
+    assets \
     README.md \
     -x "*.DS_Store" "__pycache__/*" "*.pyc"
 
