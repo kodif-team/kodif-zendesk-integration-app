@@ -10,7 +10,3 @@ This package is intended for a Zendesk Marketing-only / Integration App submissi
 - `translations/en.json` — Marketplace listing text
 - `assets/logo.png` — app logo asset
 - `assets/logo-small.png` — small logo asset
-
-## Integration Behavior
-
-Kodif connects to Zendesk through a backend OAuth flow initiated from the Kodif dashboard. A Zendesk admin authorizes access, and Kodif uses OAuth access tokens to call Zendesk APIs from Kodif's backend service.
