@@ -1,0 +1,11 @@
+{
+  "name": "Kodif Support Automation",
+  "author": {
+    "name": "Kodif Inc.",
+    "email": "support@kodif.io",
+    "url": "https://kodif.ai"
+  },
+  "version": "1.0.0",
+  "private": false,
+  "marketingOnly": true
+}

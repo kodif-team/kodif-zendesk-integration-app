@@ -1,0 +1,12 @@
+# Build artifact — regenerate with build_zip.sh
+kodif-zendesk-integration-app.zip
+
+# OS / editor
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.pyc

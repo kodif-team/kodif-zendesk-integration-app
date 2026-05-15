@@ -1,0 +1,8 @@
+{
+  "app": {
+    "name": "Kodif",
+    "short_description": "AI support automation for Zendesk.",
+    "long_description": "Customer Support AI Platform. Empower agents and scale your customer service with intelligent automation and AI-assisted workflows.",
+    "installation_instructions": "To connect Zendesk to Kodif, open the Kodif dashboard and select the Zendesk integration. A Zendesk admin will be redirected to Zendesk to authorize access using OAuth."
+  }
+}
